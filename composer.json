@@ -1,10 +1,16 @@
 {
-    "name": "slim/slim-skeleton",
-    "description": "A Slim Framework skeleton application for rapid development",
-    "keywords": ["microframework","rest","router"],
-    "homepage": "http://github.com/codeguy/Slim-Skeleton",
+    "name": "jswhetstone/slim-skeleton-bootstrap",
+    "description": "A Slim Framework skeleton application with Bootstrap3; 
+	based on Slim-Skeleton by Josh Lockhart.",
+    "keywords": ["microframework","rest","router","slim","bootstrap","boostrap3","less"],
+    "homepage": "http://github.com/jswhetstone/Slim-Skeleton-Bootstrap",
     "license": "MIT",
     "authors": [
+		{
+            "name": "Jacob Whetstone",
+            "email": "hello@jswhetstone.com",
+            "homepage": "http://jswhetstone.com"
+        },
         {
             "name": "Josh Lockhart",
             "email": "info@joshlockhart.com",
@@ -16,6 +22,7 @@
         "monolog/monolog": "1.*",
         "slim/slim": "2.*",
         "slim/views": "0.*",
-        "twig/twig": "1.*"
+        "twig/twig": "1.*",
+		"twbs/bootstrap" : "3.*"
     }
 }
