@@ -1,7 +1,6 @@
 {
     "name": "jswhetstone/slim-skeleton-bootstrap",
-    "description": "A Slim Framework skeleton application with Bootstrap3; 
-	based on Slim-Skeleton by Josh Lockhart.",
+    "description": "A Slim Framework skeleton application with Bootstrap3; based on Slim-Skeleton by Josh Lockhart.",
     "keywords": ["microframework","rest","router","slim","bootstrap","boostrap3","less"],
     "homepage": "http://github.com/jswhetstone/Slim-Skeleton-Bootstrap",
     "license": "MIT",
