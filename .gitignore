@@ -1,4 +1,9 @@
 /vendor/
+/components/
+/node_modules/
+/public/css/
+/public/fonts/
+/public/js/vendor
 /logs/*
 !/logs/README.md
 /templates/cache/*
