@@ -23,6 +23,7 @@ $app->view->parserOptions = array(
     'strict_variables' => false,
     'autoescape' => true
 );
+
 $app->view->parserExtensions = array(new \Slim\Views\TwigExtension());
 
 // Define routes
@@ -31,6 +32,11 @@ $app->get('/', function () use ($app) {
     $app->log->info("Slim-Skeleton '/' route");
     // Render index view
     $app->render('index.html.twig');
+});
+
+// Define 404 template
+$app->notFound(function () use ($app) {
+    $app->render('404.html.twig');
 });
 
 // Run app
