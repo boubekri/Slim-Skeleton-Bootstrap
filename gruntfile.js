@@ -50,10 +50,17 @@ module.exports = function (grunt) {
                 src: '**/*',
                 dest: 'public/fonts',
                 expand: true
+            },
+            jquery: {
+                cwd: 'components/jquery',
+                src: 'jquery.min.js',
+                dest: 'public/js/vendor',
+                expand: true
             }
 
         }
     });
     grunt.registerTask('default', ['watch']);
     grunt.registerTask('dist', ['less:dist']);
+    grunt.registerTask('bootstrap',['copy:less','copy:js','copy:fonts','copy:jquery'])
 };
