@@ -24,7 +24,9 @@ $app->view->parserOptions = array(
     'autoescape' => true
 );
 
-$app->view->parserExtensions = array(new \Slim\Views\TwigExtension());
+$app->view->parserExtensions = array(
+    new \Slim\Views\TwigExtension(),
+    new \JSW\Twig\TwigExtension());
 
 // Define routes
 $app->get('/', function () use ($app) {

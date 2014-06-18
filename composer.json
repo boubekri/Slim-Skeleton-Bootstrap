@@ -23,6 +23,7 @@
         "slim/views": "0.*",
         "twig/twig": "1.*",
         "components/jquery": "1.*",
-		"components/bootstrap" : "3.*"
+		"components/bootstrap" : "3.*",
+        "jswhetstone/twig-extension" : "dev-master"
     }
 }
