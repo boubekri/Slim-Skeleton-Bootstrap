@@ -26,8 +26,6 @@
         </p>
 
         <h3>Provided Blocks</h3>
-
-        <p>The following blocks are provided: </p>
         <h4><code>{{ '{% block container %}' }}</code></h4>
         <blockquote>
             Implement this block to render all of your page content within a single
@@ -58,6 +56,24 @@
         <blockquote>
             Put any page-specific javascript blocks or includes in this block;<br>
             it will be rendered at the end of the page, after jQuery, Bootstrap, and app.js
+        </blockquote>
+        <h3>Extra Twig Functions</h3>
+        <p>The following Twig functions are provided by
+            <a href="https://github.com/jswhetstone/twig-extension" target="_blank">
+                <code>jswhetstone/twig-extension</code>
+            </a>
+        </p>
+        <h4><code>{{ '{{ getPageClass() }}' }}</code></h4>
+        <blockquote>
+            Will return a class-ready string representation of the current URI.<br>
+            Each directory in the hierarchy is represented by a separate class.<br>
+            The root directory will return 'home' (without quotes).
+        </blockquote>
+        <h4><code>{{ '{{ getActiveClass(\'/some/page\') }}' }}</code></h4>
+        <blockquote>
+            Will return 'active' (without quotes) if the current URI contains the string specified.<br>
+            Good for rendering the active state on Bootstrap nav elements.<br>
+            Pass an empty string ('') to check for root.
         </blockquote>
 
     </section>
