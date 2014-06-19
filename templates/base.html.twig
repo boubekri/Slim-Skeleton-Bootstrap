@@ -5,9 +5,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+    <meta name="description" content="{% block description %}A Slim Framework application with Bootstrap 3{% endblock %}">
     <meta name="author" content="">
-    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+    {% block meta %}{% endblock %}
+    <link rel="shortcut icon" href="/assets/ico/favicon.ico">
 
     <title>{% block title %}Sticky Footer Navbar Template for Bootstrap{% endblock %}</title>
 
@@ -75,6 +76,7 @@
 <!-- Check for jQuery and Bootstrap, load them locally if they don't exist -->
 <script>if(!window.jQuery){document.write('<script src="/js/vendor/jquery.min.js"><\/script>')};</script>
 <script>if(typeof $.fn.emulateTransitionEnd != 'function'){document.write('<script src="/js/vendor/bootstrap.min.js"><\/script>')};</script>
-
+<script src="/js/app.js"></script>
+{% block scripts %}{% endblock %}
 </body>
 </html>
