@@ -36,6 +36,16 @@ $app->get('/', function () use ($app) {
     $app->render('index.html.twig');
 });
 
+$app->get('/examples/content_example', function () use ($app)
+{
+    $app->render('example_content.html.twig');
+});
+
+$app->get('/examples/container_example', function () use ($app)
+{
+    $app->render('example_container.html.twig');
+});
+
 // Define 404 template
 $app->notFound(function () use ($app) {
     $app->render('404.html.twig');
